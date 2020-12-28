@@ -4,4 +4,5 @@
 
 | Read # | Link |
 |------|------|
-| Code Challenge: Class 01 | [arrayReverse](/challenges/arrayReverse/README.md) |
+| Code Challenge: Array Reverse | [arrayReverse](/challenges/arrayReverse/README.md) |
+| Code Challenge: Array Shift | [arrayReverse](/challenges/arrayShift/README.md) |
