@@ -1,4 +1,4 @@
-# Reverse an Array
+# Array Binary Search
 
 ## Challenge
 
@@ -16,4 +16,4 @@ The complexity of this apprach is O(log n) which is good.
 
 ## Solution
 
-![whiteboard](../../assets/code-challenge-1.png)
+![whiteboard](../../assets/code-challenge-3.png)
