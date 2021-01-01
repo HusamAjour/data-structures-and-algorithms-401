@@ -3,7 +3,7 @@
 let reverseArray = require('../challenges/arrayReverse/array-reverse');
 
 
-describe('Array Reverse Module', () => {
+describe('Array Shift Module', () => {
     it('Should return the received array reversed.', ()=>{
         expect(reverseArray([1,2,3,4,5,6])).toEqual([6,5,4,3,2,1]);
     });

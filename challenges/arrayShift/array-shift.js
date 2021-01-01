@@ -18,17 +18,4 @@ const insertShiftArray = (arr, val) => {
 module.exports = insertShiftArray;
 
 // Test
-
-console.log(insertShiftArray([1, 2, 3, 4, 5, 6], 5));
-console.log(insertShiftArray([89, 2354, 3546, 23, 10, -923, 823, -12], 333));
-
-// Run this command to see test results 'node challenges/arrayReverse/array-shift.js'
-
-/*
-it('Should work with an array with one element only.', ()=>{
-        expect(insertShiftArray([1])).toEqual([1]);
-    });
-    it('Should work with an empty array by receving an empty array.', ()=>{
-        expect(insertShiftArray([])).toEqual([]);
-    });
-    */
+// Run npm test __test__/array-shift.test.js
