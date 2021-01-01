@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/HusamAjour/data-structures-and-algorithms-401/issues"
   },
-  "homepage": "https://github.com/HusamAjour/data-structures-and-algorithms-401#readme"
+  "homepage": "https://github.com/HusamAjour/data-structures-and-algorithms-401#readme",
+  "dependencies": {
+    "jest": "^26.6.3",
+    "jest-cli": "^26.6.3"
+  }
 }
