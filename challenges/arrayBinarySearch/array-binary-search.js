@@ -21,11 +21,9 @@ const arrayBinarySearch = (arr, val) => {
     return -1;
 }
 
+module.exports = arrayBinarySearch;
+
+
 
 // Test
-
-console.log(arrayBinarySearch([4, 8, 15, 16, 23, 42], 15));
-console.log(arrayBinarySearch([11, 22, 33, 44, 55, 66, 77], 90));
-
-
-// Run this command to see test results 'node challenges/arrayReverse/array-reverse.js'
+// Run npm test __test__/array-binary-search.test.js
