@@ -4,6 +4,7 @@
 
 | Read # | Link |
 |------|------|
-| Code Challenge: Array Reverse | [arrayReverse](/challenges/arrayReverse/README.md) |
-| Code Challenge: Array Shift | [arrayShift](/challenges/arrayShift/README.md) |
-| Code Challenge: Array Binary Search | [arrayBinarySearch](/challenges/arrayBinarySearch/README.md) |
+| Code Challenge: Array Reverse | [Documentation](/challenges/arrayReverse/README.md) |
+| Code Challenge: Array Shift | [Documentation](/challenges/arrayShift/README.md) |
+| Code Challenge: Array Binary Search | [Documentation](/challenges/arrayBinarySearch/README.md) |
+| Code Challenge: Linked List | [Documentation](/challenges/linkedList/README.md) |
