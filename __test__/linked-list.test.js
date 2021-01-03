@@ -13,6 +13,12 @@ describe('Linked List Module', () => {
     ll.insert(5);
     expect(ll.toString()).toEqual('{ 5 } -> NULL');
   });
+  
+  it('Should add a node to the end of the linked list', () => {
+    let ll = new LinkedList();
+    ll.append(5).append(8).append(10);
+    expect(ll.append(12).toString()).toEqual('{ 5 } -> { 8 } -> { 10 } -> { 12 } -> NULL');
+  });
 
   it('The head property should properly point to the first node in the linked list', () => {
     let ll = new LinkedList();

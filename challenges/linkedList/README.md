@@ -13,13 +13,25 @@ The challenge is to create a linked list which consists of a set of nodes, each 
 
 ## API
 
-### `insert()`
+### `insert(value)`
 
-The `insert()` method adds a new node to begining of the list, which makes it the new head of the list.
+The `insert()` method adds a new node to begining of the list, which makes it the new head of the list. The big O of this method is O(1) since there is no need to use any loops to insert a node to the begining of the list.
 
-### `includes()`
+### `append(value)`
 
-The `includes()` checks if a value existis in the list; if it exists the it returns `true`, if not, it returns `false`;
+The `append()` method adds a new node to end of the list, which can be done by treversing through all the nodes till reach the last one and point it to the new node and point the new node to null. The big O of this method is O(1) if the list is empty, if not O(n) since it traverse through all the nodes  to insert a node to the end of the list.
+
+### `insertBefore(value, newValue)`
+
+The `insertBefore()` method adds a new node the list before a value in the list, and if the targeted value is not in the list it doesn't add the new node. The big O of this method is O(1) if the target node is the first one in the list and the worst case and O(n) in the worst case if the target node is the last one in the list.
+
+### `insertAfter(value, newValue)`
+
+The `insert()` method adds a new node the list after a value in the list, and if the targeted value is not in the list it doesn't add the new node. The big O of this method is O(1) if the target node is the first one in the list and the worst case and O(n) in the worst case if the target node is the last one in the list.
+
+### `includes(value)`
+
+The `includes()` checks if a value existis in the list; if it exists the it returns `true`, if not, it returns `false`. The big O of this method is O(1) if the target value is the first one in the list and the worst case and O(n) in the worst case if the target node is the last one in the list.
 
 ### `toString()`
 
@@ -30,3 +42,13 @@ The `toString()` method makes a strign shape of the linked list as follows:
 Example: A linked list has values 3, 4, Hi, 5 and Welcome respectively, the value of using `toString()` method is:
 
 `{ 3 } -> { 4 } -> { Hi } -> { 5 } -> { Welcome } -> NULL`.
+
+The big O of this method is O(n) since it traverse through all the nodes in the list.
+
+## Whiteboards
+
+![append](../../assets/append.PNG)
+
+![insertBefore](../../assets/insertAfter.PNG)
+
+![insertAfter](../../assets/insertBefore.PNG)
