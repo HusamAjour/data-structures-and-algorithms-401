@@ -31,7 +31,11 @@ The `insert()` method adds a new node the list after a value in the list, and if
 
 ### `includes(value)`
 
-The `includes()` checks if a value existis in the list; if it exists the it returns `true`, if not, it returns `false`. The big O of this method is O(1) if the target value is the first one in the list and the worst case and O(n) in the worst case if the target node is the last one in the list.
+The `includes()` checks if a value existis in the list; if it exists the it returns `true`, if not, it returns `false`. The big O of this method is O(1) if the target value is the first one in the list and O(n) in the worst case if the target node is the last one in the list.
+
+### `kthFromEnd(k)`
+
+The `includes()` return the kth value of the kist from the starting from the end of the list. If the list is empty, the k value is negative, k is greater than or equal to the length of the list it should return null. Otherwise it should return the value of that index from the back. the complexity of this method is O(2n) which means O(n) since the the method traverse through all the nodes in the list to find the count then traverse again to return the value of the specified index from the end.
 
 ### `toString()`
 
@@ -52,3 +56,5 @@ The big O of this method is O(n) since it traverse through all the nodes in the 
 ![insertBefore](../../assets/insertAfter.PNG)
 
 ![insertAfter](../../assets/insertBefore.PNG)
+
+![kthFromEnd](../../assets/kthFromEnd.PNG)
