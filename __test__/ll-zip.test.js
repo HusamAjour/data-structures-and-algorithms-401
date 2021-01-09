@@ -34,16 +34,13 @@ describe('zipLists() Module', () => {
     expect(ll1.toString()).toEqual(
       '{ 5 } -> { 3 } -> { 10 } -> { 9 } -> { 20 } -> { 25 } -> NULL'
     );
-
-
-});
-it('Should work if linked lists have differnet lengths', () => {
-    let ll1 = new LinkedList().append(5).append(10)
-    let ll2 = new LinkedList().append(3).append(9).append(25).append(20);;
+  });
+  it('Should work if linked lists have differnet lengths', () => {
+    let ll1 = new LinkedList().append(5).append(10);
+    let ll2 = new LinkedList().append(3).append(9).append(25).append(20);
     zipLists(ll1, ll2);
     expect(ll1.toString()).toEqual(
       '{ 5 } -> { 3 } -> { 10 } -> { 9 } -> { 25 } -> { 20 } -> NULL'
     );
-});
-
+  });
 });
