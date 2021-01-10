@@ -9,10 +9,10 @@ class Stack {
 
   push(val) {
     if (!this.top) {
-      let newNode = new node(val, this.top.next);
+      let newNode = new node(val, null);
       this.top = newNode;
     } else {
-      let newNode = (val, null);
+      let newNode = new node(val, this.top);
       this.top = newNode;
     }
   }
@@ -45,5 +45,4 @@ class Stack {
     }
   }
 }
-
 module.exports = Stack;
