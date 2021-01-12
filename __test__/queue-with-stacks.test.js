@@ -1,6 +1,6 @@
 'use strict';
 
-let pseudoQueue = require('../challenges/queue-with-stacks.js/queue-with-stacks');
+let pseudoQueue = require('../challenges/queueWithStacks/queue-with-stacks');
 
 describe('Stack and Queue Module', () => {
 
@@ -14,7 +14,7 @@ describe('Stack and Queue Module', () => {
         let que = new pseudoQueue();
         que.enqueue(10);
         que.enqueue(20);
-        que.enqueue(30);
+        que.enqueue(30);a
         expect(que.dequeue()).toEqual(10);
         expect(que.dequeue()).toEqual(20);
         expect(que.dequeue()).toEqual(30);
