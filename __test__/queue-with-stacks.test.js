@@ -14,7 +14,7 @@ describe('Stack and Queue Module', () => {
         let que = new pseudoQueue();
         que.enqueue(10);
         que.enqueue(20);
-        que.enqueue(30);a
+        que.enqueue(30);
         expect(que.dequeue()).toEqual(10);
         expect(que.dequeue()).toEqual(20);
         expect(que.dequeue()).toEqual(30);
