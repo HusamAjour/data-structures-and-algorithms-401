@@ -11,7 +11,7 @@ class AnimalShelter {
   }
 
   enqueue(animal) {
-    if (/^dog|^cat/i.test(animal)) {
+    if (/^dog$|^cat$/i.test(animal)) {
       if (!this.front) {
         this.stack1.push(animal);
         this.front = this.stack1.top;
@@ -28,7 +28,7 @@ class AnimalShelter {
       console.log('Shelter is empty!');
       return null;
     } else {
-      if (/^dog|^cat/i.test(pref)) {
+      if (/^dog$|^cat$/i.test(pref)) {
         while (this.stack1.top) {
           this.stack2.push(this.stack1.pop());
         }
@@ -61,19 +61,21 @@ class AnimalShelter {
   }
 }
 
+module.exports = AnimalShelter;
+/*
 let pseQ = new AnimalShelter();
 
-pseQ.enqueue('cat1');
-pseQ.enqueue('cat2');
-pseQ.enqueue('dog1');
-pseQ.enqueue('dog2');
-pseQ.enqueue('cat3');
+pseQ.enqueue('cat');
+pseQ.enqueue('cat');
+pseQ.enqueue('dog');
+pseQ.enqueue('dog');
+pseQ.enqueue('cat');
 
-console.log(pseQ.dequeue('cat3'));
-console.log(pseQ.dequeue('cat1'));
-console.log(pseQ.dequeue('dog2'));
-console.log(pseQ.dequeue('cat2'));
-console.log(pseQ.dequeue('dog1'));
+console.log(pseQ.dequeue('cat'));
+console.log(pseQ.dequeue('cat'));
+console.log(pseQ.dequeue('dog'));
+console.log(pseQ.dequeue('cat'));
+console.log(pseQ.dequeue('dog'));
 
 console.log(pseQ);
 
