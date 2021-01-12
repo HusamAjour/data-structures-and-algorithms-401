@@ -10,11 +10,11 @@ class Queue {
 
   enqueue(val) {
     if (!this.front) {
-      let newNode = (val, null);
+      let newNode = new node(val, null);
       this.front = newNode;
       this.rear = newNode;
     } else {
-      let newNode = (val, null);
+      let newNode = new node(val, null);
       this.rear.next = newNode;
       this.rear = newNode;
     }
