@@ -3,8 +3,12 @@
 const node = require('./node');
 
 class BinaryTree {
-  constructor(root = null) {
-    this.root = root;
+  constructor(val) {
+    if (val) {
+      this.root = new node(val,null,null);
+    } else {
+      this.root = null;
+    }
   }
   preOrder() {
     let result = [];

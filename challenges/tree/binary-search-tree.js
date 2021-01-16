@@ -4,8 +4,9 @@ const node = require('./node');
 const tree = require('./tree');
 
 class BinarySearchTree extends tree {
-  constructor(root = null) {
-    super(root);
+  constructor(root) {
+    if (root) super(root);
+    else super();
   }
   add(value) {
     let newNode = new node(value, null, null);
