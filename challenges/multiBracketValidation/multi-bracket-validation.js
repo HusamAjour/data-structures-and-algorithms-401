@@ -50,6 +50,8 @@ const multiBracketValidation = (input) => {
     stack2.push(stack1.pop());
   }
   while (stack1.top) {
+    console.log('inside while');
+    console.log(stack1.top.value);
     let stack1Top = stack1.pop();
     let stack2Top = stack2.pop();
     if (stack1Top === '(') {
@@ -69,6 +71,8 @@ const multiBracketValidation = (input) => {
 
   return true;
 };
+let x1 = multiBracketValidation('{)[}');
+console.log(`x1: ${x1}`);
 
 module.exports = multiBracketValidation;
 
