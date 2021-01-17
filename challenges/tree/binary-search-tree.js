@@ -40,7 +40,18 @@ class BinarySearchTree extends tree {
     return _search(this.root, value);
   }
 }
+let bst = new BinarySearchTree();
+console.log(bst.root);
 
+bst.add(20).add(10).add(16).add(30).add(5).add(25).add(60);
+console.log(bst.findMaximumValue());
+
+/*console.log(bst.preOrder());
+console.log(bst.inOrder());
+console.log(bst.postOrder());
+console.log(bst.contains(5));
+console.log(bst.contains(70));
+*/
 module.exports = BinarySearchTree;
 
 /*let bst = new BinarySearchTree();

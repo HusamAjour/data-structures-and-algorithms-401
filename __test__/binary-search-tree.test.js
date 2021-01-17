@@ -38,4 +38,13 @@ describe('Binary Seach Tree Class', () => {
     b.add(20).add(10).add(16).add(30).add(5).add(25).add(60);
     expect(b.postOrder()).toEqual([5, 16, 10, 25, 60, 30, 20]);
   });
+  it('7. Should successfully find the maximum value in a tree', () => {
+    let b = new bst();
+    b.add(20).add(10).add(16).add(30).add(5).add(25).add(60);
+    expect(b.findMaximumValue()).toEqual(60);
+  });
+  it('8. Should successfully return null as the maximum value in a tree if the tree is empty', () => {
+    let b = new bst();
+    expect(b.findMaximumValue()).toEqual(null);
+  });
 });
