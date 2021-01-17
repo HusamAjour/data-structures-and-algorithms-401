@@ -5,10 +5,29 @@ const node = require('./node');
 class BinaryTree {
   constructor(val) {
     if (val) {
-      this.root = new node(val,null,null);
+      this.root = new node(val, null, null);
     } else {
       this.root = null;
     }
+  }
+  findMaximumValue() {
+    if (!this.root) return null;
+    let maxVal = 0;
+
+    let _findMax = (startNode) => {
+      if (startNode.value > maxVal) {
+        maxVal = startNode.value;
+      }
+
+      if (startNode.left) {
+        _findMax(startNode.left);
+      }
+      if (startNode.right) {
+        _findMax(startNode.right);
+      }
+    };
+    _findMax(this.root);
+    return maxVal;
   }
   preOrder() {
     let result = [];

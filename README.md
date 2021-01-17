@@ -13,3 +13,4 @@
 | Code Challenge: Queue with Stacks | [Documentation](/challenges/queueWithStacks/README.md) |
 | Code Challenge: FIFO Animal Shelter | [Documentation](/challenges/fifoAnimalShelter/README.md) |
 | Code Challenge: Multi-bracket Validation | [Documentation](/challenges/multiBracketValidation/README.md) |
+| Code Challenge: Trees | [Documentation](/challenges/tree/README.md) |

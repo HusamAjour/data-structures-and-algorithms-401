@@ -42,3 +42,10 @@ The `inOrder()` traverses through the tree and returns an array with tree values
 
 The `postOrder()` traverses through the tree and returns an array with tree values in post order traversal(left >> right >> root)
 
+### `findMaximumValue()`
+
+The `findMaximumValue()` traverses through the tree and returns the maximum value in the tree and return null if the tree is empty.
+
+## Whiteboards
+
+![tree](../../assets/code-challenge-16.png)
