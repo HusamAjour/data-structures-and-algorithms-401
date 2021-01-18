@@ -1,7 +1,7 @@
 'use strict';
 
 const node = require('./node');
-
+const queue = require('../stacksAndQueues/queue');
 class BinaryTree {
   constructor(val) {
     if (val) {
@@ -68,6 +68,25 @@ class BinaryTree {
         _traverse(node.right);
       }
       result.push(node.value);
+    };
+    _traverse(this.root);
+    return result;
+  }
+  breadthFirst() {
+    if (!this.root) {
+      return null;
+    }
+    let result = [];
+    const _traverse = (startingNode) => {
+      let q = new queue();
+      q.enqueue(startingNode);
+      while (q.front) {
+        let current = q.front.value;
+        if (current.left) q.enqueue(current.left);
+        if (current.right) q.enqueue(current.right);
+        result.push(q.dequeue().value);
+        current = q.front;
+      }
     };
     _traverse(this.root);
     return result;

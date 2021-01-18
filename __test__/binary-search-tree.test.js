@@ -47,4 +47,9 @@ describe('Binary Seach Tree Class', () => {
     let b = new bst();
     expect(b.findMaximumValue()).toEqual(null);
   });
+  it('9. Should successfully return a collection from a breadth first traversal', () => {
+    let b = new bst();
+    b.add(20).add(10).add(16).add(30).add(5).add(25).add(60);
+    expect(b.breadthFirst()).toEqual([20, 10, 30, 5, 16, 25, 60]);
+  });
 });
