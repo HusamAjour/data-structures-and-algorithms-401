@@ -14,3 +14,4 @@
 | Code Challenge: FIFO Animal Shelter | [Documentation](/challenges/fifoAnimalShelter/README.md) |
 | Code Challenge: Multi-bracket Validation | [Documentation](/challenges/multiBracketValidation/README.md) |
 | Code Challenge: Trees | [Documentation](/challenges/tree/README.md) |
+| Code Challenge: Fizz Buzz Tree | [Documentation](/challenges/fizzBuzzTree/README.md) |
