@@ -46,7 +46,7 @@ The `postOrder()` traverses through the tree and returns an array with tree valu
 
 The `findMaximumValue()` traverses through the tree and returns the maximum value in the tree and return null if the tree is empty.
 
-### `findMaximumValue()`
+### `breadthFirst()`
 
 The `breadthFirst()` traverses through the tree and returns an array with all the node values in a breath first oder.
 
