@@ -15,3 +15,4 @@
 | Code Challenge: Multi-bracket Validation | [Documentation](/challenges/multiBracketValidation/README.md) |
 | Code Challenge: Trees | [Documentation](/challenges/tree/README.md) |
 | Code Challenge: Fizz Buzz Tree | [Documentation](/challenges/fizzBuzzTree/README.md) |
+| Code Challenge: Insertion Sort | [Documentation](/challenges/insertionSort/README.md) |
