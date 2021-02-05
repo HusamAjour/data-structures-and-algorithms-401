@@ -17,3 +17,4 @@
 | Code Challenge: Fizz Buzz Tree | [Documentation](/challenges/fizzBuzzTree/README.md) |
 | Code Challenge: Insertion Sort | [Documentation](/challenges/insertionSort/README.md) |
 | Code Challenge: Merge Sort | [Documentation](/challenges/mergeSort/README.md) |
+| Code Challenge: Quick Sort | [Documentation](/challenges/quickSort/README.md) |
