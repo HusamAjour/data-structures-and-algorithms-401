@@ -25,41 +25,43 @@ class HashTable {
 
   get(key) {
     let hash = this.hash(key);
-    if (this.table[hash]) {
-      let current = this.table[hash].head;
-      while (current.next) {
-        if (current.value[key]) {
-          return current.value[key];
-        }
-        current = current.next;
+
+    if (!this.table[hash]) return false;
+    let current = this.table[hash].head;
+    while (current) {
+      if (current.value[key]) {
+        return current.value[key];
       }
-    } else return false;
+      current = current.next;
+    }
+
+    return false;
   }
 
   contains(key) {
     let hash = this.hash(key);
-    if (this.table[hash]) {
-      let current = this.table[hash].head;
-      while (current.next) {
-        if (current.value[key]) {
-          return true;
-        }
-        current = current.next;
+
+    if (!this.table[hash]) return false;
+    let current = this.table[hash].head;
+    while (current) {
+      if (current.value[key]) {
+        return true;
       }
-    } else return false;
+      current = current.next;
+    }
+
+    return false;
   }
 }
-
-// const hashTable = new HashTable(1024);
-// hashTable.add('cat', 'Candy');
+const hashTable = new HashTable(1024);
+hashTable.add('cat', 'Candy');
 // hashTable.add('act', 'Christian Bale');
 // hashTable.add('name', 'Husam');
 // hashTable.add('act', 'Husam');
-// hashTable.add('city', 'Aqaba');
+hashTable.add('city', 'Aqaba');
 // hashTable.add('name', 'Hanaa');
 // console.log(hashTable.get('act'));
-// console.log(hashTable.get('cat'));
+console.log(hashTable.get('city'));
 // console.log(hashTable.contains('name'));
 
 module.exports = HashTable;
-
