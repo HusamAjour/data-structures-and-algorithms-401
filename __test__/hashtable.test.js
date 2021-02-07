@@ -8,7 +8,6 @@ describe('Hashtable Class', () => {
     hashTable.add('cat', 'Candy');
     hashTable.add('act', 'Christian Bale');
     hashTable.add('name', 'Husam');
-    expect(hashTable.get('cat')).toEqual('Candy');
     expect(hashTable.get('name')).toEqual('Husam');
     expect(hashTable.get('act')).toEqual('Christian Bale');
   });
