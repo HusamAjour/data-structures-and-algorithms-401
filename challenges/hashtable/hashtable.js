@@ -16,6 +16,7 @@ class HashTable {
 
   add(key, value) {
     let hash = this.hash(key);
+    this.table[hash] = null;
     if (!this.table[hash]) {
       this.table[hash] = new linkedList();
     }
@@ -53,15 +54,15 @@ class HashTable {
     return false;
   }
 }
-const hashTable = new HashTable(1024);
-hashTable.add('cat', 'Candy');
+// const hashTable = new HashTable(1024);
+// hashTable.add('cat', 'Candy');
 // hashTable.add('act', 'Christian Bale');
 // hashTable.add('name', 'Husam');
 // hashTable.add('act', 'Husam');
-hashTable.add('city', 'Aqaba');
+// hashTable.add('city', 'Aqaba');
 // hashTable.add('name', 'Hanaa');
 // console.log(hashTable.get('act'));
-console.log(hashTable.get('city'));
+// console.log(hashTable.get('city'));
 // console.log(hashTable.contains('name'));
 
 module.exports = HashTable;
