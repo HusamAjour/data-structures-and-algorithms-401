@@ -16,10 +16,20 @@ class HashTable {
 
   add(key, value) {
     let hash = this.hash(key);
-    this.table[hash] = null;
+
     if (!this.table[hash]) {
       this.table[hash] = new linkedList();
     }
+
+    let current = this.table[hash].head;
+    while (current) {
+      if (current.value[key]) {
+        current.value[key] = value;
+        return;
+      }
+      current = current.next;
+    }
+
     const entry = { [key]: value };
     this.table[hash].append(entry);
   }
