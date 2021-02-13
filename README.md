@@ -21,3 +21,4 @@
 | Code Challenge: Hashtable | [Documentation](/challenges/hashtable/README.md) |
 | Code Challenge: Repeated Word | [Documentation](/challenges/repeatedWord/README.md) |
 | Code Challenge: Left Join | [Documentation](/challenges/leftJoin/README.md) |
+| Code Challenge: Graph | [Documentation](/challenges/graph/README.md) |
