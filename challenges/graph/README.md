@@ -25,3 +25,11 @@ The `getNeighbours()` returns an array with the neighbor vertices and the weight
 ### `size()`
 
 The `size()` returns an integer represents the number of the vertices in the graph.
+
+### `breadthFirst()`
+
+The `breadthFirst()` traverse a graph from a specific vertix in a breadth-first apprach and returns an array with the values.
+
+## Whiteboards
+
+![whiteboard](../../assets/graph-bfs.png)
