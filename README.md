@@ -22,3 +22,4 @@
 | Code Challenge: Repeated Word | [Documentation](/challenges/repeatedWord/README.md) |
 | Code Challenge: Left Join | [Documentation](/challenges/leftJoin/README.md) |
 | Code Challenge: Graph | [Documentation](/challenges/graph/README.md) |
+| Code Challenge: Get Edge | [Documentation](/challenges/getEdge/README.md) |

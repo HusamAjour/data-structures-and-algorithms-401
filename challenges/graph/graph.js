@@ -26,6 +26,19 @@ class Graph {
     adjacencies.push(new Edge(endVertex, weight));
   }
 
+  getNode(value) {
+    let keys = this._adjacencyList.keys();
+    while (true) {
+      let key = keys.next().value;
+      if (key) {
+        if (key.value === value) return key;
+      } else {
+        break;
+      }
+    }
+    return null;
+  }
+
   getNodes() {
     let keys = this._adjacencyList.keys();
     let nodes = [];
@@ -76,26 +89,26 @@ class Graph {
     return values;
   }
 }
-let g = new Graph();
+// let g = new Graph();
 
-const two = new Vertex(2);
-const three = new Vertex(3);
-const six = new Vertex(6);
-const seven = new Vertex(7);
-const eight = new Vertex(8);
+// const two = new Vertex(2);
+// const three = new Vertex(3);
+// const six = new Vertex(6);
+// const seven = new Vertex(7);
+// const eight = new Vertex(8);
 
-g.addNode(two);
-g.addNode(three);
-g.addNode(six);
-g.addNode(seven);
-g.addNode(eight);
+// g.addNode(two);
+// g.addNode(three);
+// g.addNode(six);
+// g.addNode(seven);
+// g.addNode(eight);
 
-g.addEdge(two, six);
-g.addEdge(two, three);
-g.addEdge(three, seven);
-g.addEdge(eight, two);
-g.addEdge(three, six);
+// g.addEdge(two, six);
+// g.addEdge(two, three);
+// g.addEdge(three, seven);
+// g.addEdge(eight, two);
+// g.addEdge(three, six);
 
-console.log(g.breadthFirst(eight));
+// console.log(g.breadthFirst(eight));
 
 module.exports = Graph;
