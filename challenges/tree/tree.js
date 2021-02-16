@@ -76,19 +76,29 @@ class BinaryTree {
     if (!this.root) {
       return null;
     }
+    let q = new queue();
     let result = [];
-    const _traverse = (startingNode) => {
-      let q = new queue();
-      q.enqueue(startingNode);
-      while (q.front) {
-        let current = q.front.value;
-        if (current.left) q.enqueue(current.left);
-        if (current.right) q.enqueue(current.right);
-        result.push(q.dequeue().value);
-        current = q.front;
-      }
-    };
-    _traverse(this.root);
+    q.enqueue(this.root);
+
+    while (!q.isEmpty()) {
+      let current = q.dequeue();
+      if(current.left) q.enqueue(current.left);
+      if(current.left) q.enqueue(current.right);
+      result.push(current.value);
+      console.log(current);
+    }
+    // const _traverse = (startingNode) => {
+    //   let q = new queue();
+    //   q.enqueue(startingNode);
+    //   while (q.front) {
+    //     let current = q.front.value;
+    //     if (current.left) q.enqueue(current.left);
+    //     if (current.right) q.enqueue(current.right);
+    //     result.push(q.dequeue().value);
+    //     current = q.front;
+    //   }
+    // };
+    // _traverse(this.root);
     return result;
   }
 }
